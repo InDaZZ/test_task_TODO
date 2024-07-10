@@ -1,0 +1,74 @@
+.todos {
+    padding: 20px 30px;
+}
+
+@media screen and (max-width: 420px) {
+    .todos {
+        padding: 10px 10px;
+    }
+}
+
+.todos__filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .todos__filters {
+        justify-content: space-between;
+    }
+}
+
+.todos__filter {
+    border: none;
+    border-radius: 5px;
+}
+
+.todos__title {
+    text-align: center;
+    padding: 0 0 15px;
+    border-bottom: 1px solid #d1d1d1;
+    width: 90%;
+    margin: 0 auto 40px;
+}
+
+.todos__default-message {
+    text-align: center;
+}
+
+.todos__filter {
+    border: 2px solid transparent;
+    border: none;
+    font-size: 13px;
+}
+
+
+
+
+.todos__filter_active {
+    border: 2px solid black;
+    transform: all 0.5s ease-out;
+    font-size: 14px;
+}
+
+.todos__filter:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 14px;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.todos__filter_all {
+    background: linear-gradient(45deg, #fff, #e5e1da 43%, #c7bfb3);
+}
+
+.todos__filter_current {
+    background: linear-gradient(45deg, #fad85f, #f2d646 43%, #ffa929);
+
+}
+
+.todos__filter__done {
+    background: linear-gradient(45deg, #7c6fcf, #74aeaa 43%, #6fcf97);
+}

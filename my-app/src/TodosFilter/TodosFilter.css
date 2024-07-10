@@ -1,0 +1,9 @@
+.todos-filter-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todos-filter {
+    border: 1px solid;
+    border-radius: 6px;
+}
